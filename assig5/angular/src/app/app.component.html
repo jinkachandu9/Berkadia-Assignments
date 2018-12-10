@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div >
+<table align="center" border="10px">
+  <tr>
+    <th>
+      index
+    </th>
+    <th>
+      name
+    </th>
+    <th>
+      rollno:
+    </th>
+  </tr>
+   <tr *ngFor="let x of StudentDetails;let i=index,let even=even,let odd=odd,let first=first,let last=last"
+   [ngClass]="{evenClass:even,oddClass:odd,firstClass:first,lastClass:last}">
+     <td>
+       {{i+1}}
+     </td>
+     <td>
+       {{x.name}}
+     </td>
+     <td>
+       {{x.id}}
+     </td>
+   </tr>
+  </table> 
+  <h4>first rows is represented by orange</h4>
+  <h4>last rows is represented by red</h4>
+  <h4>even is represented by blue</h4>
+  <h4>odd is represented by yellow</h4>
+</div>
+<router-outlet></router-outlet>
