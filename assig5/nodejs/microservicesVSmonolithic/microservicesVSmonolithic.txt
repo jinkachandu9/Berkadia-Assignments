@@ -1,0 +1,27 @@
+MICROSERVICES:
+Microservices are a single self-functional system which along with other unit forms large big system. 
+Each small unit of the system is fully functional, scalable and deployable system. Each unit can be written in different programming language and tested separately without causing an impact on other parts of the system.
+
+Benefits of Microservices architecture:
+1.The system can be scaled easily and boost system performance.
+2.Application takes lesser time to start which increases productivity of a developer.
+3.It is easily add new features and easily tested.
+4.No restriction of technology in developing any service
+
+Drawbacks of Microservices:
+1.Seperate distributed system is needed to handle multiple Microservices.
+2.Deployment complexity increases as the need to manage a system comprised of many different service types.
+
+MONOLITHIC:
+Monolithic Architecture. Monolith means composed all in one piece. The Monolithic application describes a single-tiered software application in which different components combined into a single program from a single platform.
+
+Benefits of Microservices architecture:
+1.Simple to deploy. You just have to copy the packaged application to a server.
+2.Simple to scale horizontally by running multiple copies behind a load balancer.
+3.At the beginning of a project it is much easier to go with Monolithic Architecture.
+
+
+Drawbacks of Microservices:
+1.Application is too large and complex to fully understand and made changes fast and correctly.
+2.Because of large file start-up time is more.
+3.You must redeploy the entire application on each update.
