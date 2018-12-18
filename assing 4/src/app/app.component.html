@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1> {{ title }}</h1>
+</div>
+<h1>winner After checking={{count}}</h1><br>
+<h2><button type="button" (click)="party1()">party1</button>   <-party1<br></h2>
+<h2><button type="button" (click)="party2()">party2</button>    <-party2    </h2>
+<app-update [party1Value]="party1Value" [party2Value]="party2Value" (output)="counter($event)"></app-update>
+
+
+
+
+

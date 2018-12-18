@@ -1,0 +1,21 @@
+
+Definition - What does Denial-of-Service Attack (DoS) mean?
+A denial-of-service (DoS) is any type of attack where the attackers (hackers) attempt to prevent legitimate users from accessing the service. 
+In a DoS attack, the attacker usually sends excessive messages asking the network or server to authenticate requests that have invalid return addresses.
+The network or server will not be able to find the return address of the attacker when sending the authentication approval, causing the server to wait before closing the connection. 
+
+There are two general methods of DoS attacks: flooding services or crashing services. 
+Flood attacks occur when the system receives too much traffic for the server to buffer, causing them to slow down and eventually stop. 
+
+Popular flood attacks include:
+Buffer overflow attacks – the most common DoS attack.
+The concept is to send more traffic to a network address than the programmers have built the system to handle. 
+It includes the attacks listed below, in addition to others that are designed to exploit bugs specific to certain applications or networks
+ICMP flood – leverages misconfigured network devices by sending spoofed packets that ping every computer on the targeted network, instead of just one specific machine. 
+The network is then triggered to amplify the traffic. This attack is also known as the smurf attack or ping of death.
+SYN flood – sends a request to connect to a server, but never completes the handshake. Continues until all open ports are saturated with requests and none are available for legitimate users to connect to.
+Other DoS attacks simply exploit vulnerabilities that cause the target system or service to crash. 
+In these attacks, input is sent that takes advantage of bugs in the target that subsequently crash or severely destabilize the system, so that it can’t be accessed or used.
+
+Other DoS attacks simply exploit vulnerabilities that cause the target system or service to crash. 
+In these attacks, input is sent that takes advantage of bugs in the target that subsequently crash or severely destabilize the system, so that it can’t be accessed or used.
