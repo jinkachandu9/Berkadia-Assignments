@@ -1,0 +1,177 @@
+HTTP Methods:GET,POST,HEAD,PUT,DELETE,CONNECT,OPTIONS,TRACE
+
+GET : GET is used to request data from a specified resource.
+
+POST: A POST request is used to send data to the server
+
+HEAD: Same as GET, but transfers the status line and header section only.
+
+PUT :The PUT method completely replaces whatever currently exists at the target URL with something else. With this method, you can create a new resource or overwrite an existing one given you know the exact Request-URI. 
+
+DELETE:Removes all current representations of the target resource given by a URI.
+
+CONNECT:Establishes a tunnel to the server identified by a given URI.
+
+OPTIONS:Describes the communication options for the target resource.
+
+TRACE:Performs a message loop-back test along the path to the target resource.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+HTTP RESPONSE CODES: 
+
+1xx (Informational): The request was received and process is continuing.
+
+2xx (Successful): The request was successfully received, understood, and accepted
+
+3xx (Redirection): Further action needs to be taken in order to complete the request
+
+4xx (Client Error): The request contains bad syntax or cannot be fulfilled
+
+5xx (Server Error): The server failed to fulfill an apparently valid request
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+IDEMPOTENCY:
+
+A request method is considered "idempotent" if the intended effect on the server of multiple identical requests with that method is the same as the effect for a single such request. 
+
+GET,HEAD,PUT,DELETE,OPTIONS,TRACE are idempotent 
+
+POST,CONNECT are not idempotent
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+CONTENT DELIVERY NETWORK:
+
+A CDN (content delivery network), also called a content distribution network, is a group of geographically distributed and interconnected servers that provide cached internet content from a network location closest to a user to accelerate its delivery. 
+
+The primary goal of a CDN is to improve web performance by reducing the time needed to transmit content and rich media to users' internet-connected devices.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+MEAN AND MERN:
+
+MEAN:
+The MEAN stack is MongoDB, Express.js, AngularJS (or Angular), and Node.js.
+Because all components of the MEAN stack support programs are written in JavaScript, MEAN applications can be written in one language for both server-side and client-side execution environments.
+
+MERN:
+MERN is a scaffolding tool which makes it easy to build universal apps using Mongo, Express, React and NodeJS.
+It minimises the setup time and gets you up to speed using proven technologies.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ADVANTAGES OF COMPILER OVER INTERPRETER:
+
+At runtime, the compiler executes instructions at full speed than interpreter.
+
+The end user will not have your source code which may be important for commercial code.
+But for interpreter requires source code.
+
+Interpreters translates only the part of the program it is currently executing
+whereas compilers translate the entire program.thus compilers can perform global optimizations that interpreter cannot.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+TIME COMPLEXITY AND SPACE COMPLEXITY:
+
+The time complexity is the computational complexity that describes the amount of time it takes to run an algorithm.The time complexity is commonly expressed using big O notation	
+
+Space complexity is a measure of the amount of working storage an algorithm needs. That means how much memory, in the worst case, is needed at any point in the algorithm
+
+NOTATIONS:
+Ο Notation - WORST   CASE
+Ω Notation - BEST 	 CASE
+θ Notation - AVERAGE CASE
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NODE JS:
+
+FAST(NON BLOCKING I/O):
+Node js conatins libuv which can do event loop.
+Take requests and never block itself from receiving more request while fulfilling it's queue
+
+CROSS PLATFORM :
+Runs on windows,max and Linux.
+
+LARGE ECOSYSTEM OF OPEN SOURCE LIB:
+node.js contains thousands of free packages in npm(node package manager). 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SINGLE THREAD:
+The execution of an entire task from beginning to end without interruption
+
+MULTI THREADING:
+Multi threading is an execution model that allows a single process to have multiple code segments (i.e., threads) running concurrently.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+MULTI-PROCESSING:
+using two or more processing unit for performing task.
+
+MULTI-THREADING:
+Multi threading is an execution model that allows a single process to have multiple code segments (i.e., threads) running concurrently.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SYNCHRONOUS LANGUAGE:
+Executing the code with blocking the i/o  methods until executes
+
+ASYNCHRONOUS LANGUAGE:
+non-blocking i/o methods using event loop language are called as asynchronous.
+
+------------------------------------------------------------------------------
+
+EVENT LOOP:
+
+Any JavaScript code that takes too long to return back control to the event loop will block the execution of any JavaScript code in the page, even block the UI thread, and the user cannot click around, scroll the page, and so on.
+
+Almost all the I/O primitives in JavaScript are non-blocking. Network requests, filesystem operations, and so on. Being blocking is the exception, and this is why JavaScript is based so much on callbacks, and more recently on promises and async/await.
+
+It call stack is a LIFO queue (Last In, First Out).
+
+The event loop continuously checks the call stack to see if there’s any function that needs to run.
+
+While doing so, it adds any function call it finds to the call stack and executes each one in order.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+LIBUV:
+
+libuv is a multi-platform support library with a focus on asynchronous I/O. It was primarily developed for use by Node.js, but it’s also used by Luvit, Julia, pyuv, and others.
+
+libuv is written in c and used to event loop.
+
+It was originally an abstraction around libev or Microsoft IOCP, as libev doesn't support Windows. 
+
+In node-v0.9.0's version of libuv, the dependency on libev was removed
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+v8 ENGINE:
+
+It is developed by google.It is written in c++ language.
+
+It is used to convert the javascript to machine code.It is converted by java script Engine.
+
+The cool thing is that the JavaScript engine is independent by the browser in which it’s hosted. This key feature enabled the rise of Node.js.
+
+V8 was chosen to be the engine that powered Node.
+
+js back in 2009, and as the popularity of Node.js exploded, V8 became the engine that now powers an incredible amount of server-side code written in JavaScript.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NON-BLOCKING I/O:
+
+When a program makes many I/O operations ,the processor can spend almost all of its time idle waiting for I/O operations to complete.
+Alternatively, it is possible to start the communication and then perform processing that does not require that the I/O be completed
+
+Response from IO devices are furnished to the system once the operation completes
+however system wouldn't stall in that time. Once you get the response, it can trigger some function to be completed. Any new requests sent to the same IO device will be queued and responses are also returned one after other. This is mostly achieved through parallel programming / creating multiple threads for each IO.
+
+Asynchronous I/O is used to improve throughput, latency, and responsiveness.
