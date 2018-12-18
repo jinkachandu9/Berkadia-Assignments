@@ -1,0 +1,73 @@
+WAYS TO CREATE OBJECT:
+
+
+BY object literals:
+
+directly we can write the properties in the object while creating 
+ex:
+var object1={
+	prop1:"hi";
+	prop2:"bye";
+}
+console.log(object1.prop1);
+
+-------------------------------------------------------------------------------------------------------
+
+By object.create():
+
+we can write the propertes and we can inheritant by another class
+
+var object1=Object.create({},{//in place of {} we can place the parent class for inheritant
+	prop1:{
+		writeable:true,//Are you change the value
+		enumerable:true,//Are you want to display the content in console.log() in loop
+		configurable:true,//Are you change the properties
+		value:"hi"//value of prop1
+	}
+}
+);
+
+-------------------------------------------------------------------------------------------------------
+
+By new+Funtion():
+
+we can create the object by new key word and by this method we can create multiple similar objects
+
+var sample=function(value1,value2)
+{
+	this.value1=value1;
+	this.value2=value2;
+}
+var object2=new sample("hi","bye");
+console.log(object2)
+
+-------------------------------------------------------------------------------------------------------
+
+By objects creation by factory method with clouser:
+
+This is similar to previous method but difference is,here we are returning the object
+
+var functionname=function(value1,value2)
+{
+	let v1=value1;
+	let v2=value2;
+	return {
+		v1,v2
+	}
+}
+var object3=new functionname("hi","by");
+console.log(object3)
+
+-------------------------------------------------------------------------------------------------------
+
+By class keyword:
+
+This is similar to other programming language and we represent the construtor with construtor keyword not by class name
+
+class name{
+	constructor(v1,v2){
+		this.p1=v1;
+		this.p2=v2;
+	}
+}
+var object4=new name("hi","bye");

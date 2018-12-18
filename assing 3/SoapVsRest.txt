@@ -1,0 +1,29 @@
+Soap vs rest:
+
+Soap :
+soap is a protocol.
+A SOAP client works like a custom desktop application, tightly coupled to the server. There's a rigid contract between client and server, and everything is expected to break if either side changes anything. You need constant updates following any change, but it's easier to ascertain if the contract is being followe
+
+rest:
+rest is a architectural style 
+A REST client is more like a browser. It's a generic client that knows how to use a protocol and standardized methods, and an application has to fit inside that. You don't violate the protocol standards by creating extra methods, you leverage on the standard methods and create the actions with them on your media type. If done right, there's less coupling, and changes can be dealt with more gracefully. A client is supposed to enter a REST service with zero knowledge of the API, except for the entry point and the media type. In SOAP, the client needs previous knowledge on everything it will be using, or it won't even begin the interaction. Additionally, a REST client can be extended by code-on-demand supplied by the server itself, the classical example being JavaScript code used to drive the interaction with another service on the client-side.
+
+difference between soap and rest is
+SOAP is definitely the heavyweight choice for Web service access. It provides the following advantages when compared to REST:
+
+Language, platform, and transport independent (REST requires use of HTTP)
+
+Works well in distributed enterprise environments (REST assumes direct point-to-point communication)
+Standardized
+Provides significant pre-build extensibility in the form of the WS* standards
+Built-in error handling
+Automation when used with certain language products
+
+
+REST is easier to use for the most part and is more flexible. It has the following advantages when compared to SOAP:
+
+No expensive tools require to interact with the Web service
+Smaller learning curve
+Efficient (SOAP uses XML for all messages, REST can use smaller message formats)
+Fast (no extensive processing required)
+Closer to other Web technologies in design philosophy
