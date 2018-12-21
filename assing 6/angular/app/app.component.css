@@ -1,0 +1,38 @@
+body
+{
+    background-image: url("angular.jpg");
+    -webkit-background-size:cover;
+    -mov-background-size:cover;
+    -o-background-szie:cover;
+    background-size:cover;
+    backdrop-repeat:no-repeat;
+    height: 100vh;
+  } 
+  .router1
+  {
+    padding: 16px;
+    margin-top: 50px;
+    height: 1500px; 
+  }
+  .navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}

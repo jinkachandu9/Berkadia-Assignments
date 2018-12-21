@@ -1,0 +1,8 @@
+<p>
+    Components shouldn't fetch or save data directly and they certainly shouldn't knowingly present fake data. They should focus on presenting data and delegate data access to a service.<br>
+    In this tutorial, you'll create a HeroService that all application classes can use to get heroes.<br> 
+    Instead of creating that service with new, you'll rely on Angular dependency injection to inject it into the HeroesComponent constructor.<br>
+    Services are a great way to share information among classes that don't know each other. You'll create a MessageService and inject it in two places:<br>
+    1.in HeroService which uses the service to send a message.<br>
+    2.in MessagesComponent which displays that message.
+</p>
