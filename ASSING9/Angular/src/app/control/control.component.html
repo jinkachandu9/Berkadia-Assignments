@@ -1,0 +1,76 @@
+
+<main role="main">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container" align="center">
+        <h1 class="display-3">ADMIN BLOCK</h1>
+        <p>Click button to fetch data from various tables:</p>
+      </div>
+    </div>
+  
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <div align="center">
+              <h2>STUDENT DATA</h2>
+              <table  border="10px">
+              <tr><th> INDEX</th>
+                  <th> NAME</th>
+                <th> DISTRICT</th>
+                </tr>
+                 <tr *ngFor="let x of studentData;let i=index,let even=even,let odd=odd,let first=first,let last=last"
+                 [ngClass]="{evenClass:even,oddClass:odd,firstClass:first,lastClass:last}">
+                    <th>{{i+1}}</th>
+                   <th>{{x.name1}}</th>
+                   <th>{{x.place}}</th>
+                </table> 
+          <button (click)=getData()>GET</button>
+     
+        </div>
+        </div>
+        <div class="col-md-4">
+            <div align="center">
+                <h2>FACULTY DATA</h2>
+                <table  border="10px">
+                <tr><th> NAME</th>
+                    <th> COLLAGE</th>
+                  <th> DISTRICT</th>
+                  </tr>
+                   <tr *ngFor="let x of facultyData;let i=index,let even=even,let odd=odd,let first=first,let last=last"
+                   [ngClass]="{evenClass:even,oddClass:odd,firstClass:first,lastClass:last}">
+                      <th>{{x.name}}</th>
+                     <th>{{x.collage}}</th>
+                     <th>{{x.place}}</th>
+                  </table> 
+            <button (click)=getFacultyData()>GET</button>
+            </div>
+          </div>
+          <div class="col-md-4">
+              <div align="center">
+                  <h2>ASSING COLLAGES AND FACULTY</h2>
+                  <table  border="10px">
+                  <tr><th> NAME</th>
+                      <th> COLLAGE</th>
+                    <th> DISTRICT</th>
+                    <th> STUDENTNAME</th>
+                    </tr>
+                     <tr *ngFor="let x of displayData;let i=index,let even=even,let odd=odd,let first=first,let last=last"
+                     [ngClass]="{evenClass:even,oddClass:odd,firstClass:first,lastClass:last}">
+                        <th>{{x.name}}</th>
+                       <th>{{x.collage}}</th>
+                       <th>{{x.place}}</th>
+                       <th>{{x.name1}}</th>
+                    </table> 
+              <button (click)=getdisplayData()>assign</button>
+              <button (click)=post()>POST</button>
+              </div>
+            </div>
+      </div>
+  
+      <hr>
+  
+    </div> <!-- /container -->
+  
+  </main>

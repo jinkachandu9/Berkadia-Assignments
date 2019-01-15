@@ -1,0 +1,16 @@
+#table1{
+    text-align: center;
+    border: 5px;
+}
+.evenClass{
+    background-color: blue;
+}
+.firstClass{
+    background-color:orange;
+}
+.lastClass{
+    background-color:red;
+}
+.oddClass{
+    background-color:yellow;
+}

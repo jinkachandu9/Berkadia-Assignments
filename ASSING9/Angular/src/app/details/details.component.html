@@ -1,0 +1,16 @@
+<div align="center">
+    <h2>{{tempData}}</h2>
+    <table  border="10px">
+    <tr><th> NAME</th>
+        <th> COLLAGE</th>
+      <th> DISTRICT</th>
+      <th> STUDENTNAME</th>
+      </tr>
+       <tr *ngFor="let x of displayData;let i=index,let even=even,let odd=odd,let first=first,let last=last"
+       [ngClass]="{evenClass:even,oddClass:odd,firstClass:first,lastClass:last}">
+          <th>{{x.name}}</th>
+         <th>{{x.collage}}</th>
+         <th>{{x.place}}</th>
+         <th>{{x.name1}}</th>
+      </table> 
+      </div>
