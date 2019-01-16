@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-3">{{name}}</h1>
+  </div>
+</div>
+<div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col-md-4">
+      <h2>main details</h2>
+      <div *ngFor="let x of array1">{{x}}</div>
+         </div>
+    <div class="col-md-4">
+      <h2>Addition Details</h2>
+      <div *ngFor="let x of array2">{{x}}</div>
+    </div>
+    <div class="col-md-4">
+      <h2>Coordinates</h2>
+      <div *ngFor="let x of array3">{{x}}</div>
+    </div>
+  </div>
+
+  <hr>
+
+</div>
