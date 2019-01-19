@@ -1,0 +1,9 @@
+<p>{{questions}}</p>
+<p>option1:{{option1}}</p>
+<p>option2:{{option2}}</p>
+<p>option3:{{option3}}</p>
+<p>option4:{{option4}}</p>
+<input id="input" #value1>
+<button (click)="next()">next</button>
+ <button (click)="submit(value1.value)">submit</button> 
+<button (click)="result()">result</button>
